@@ -1,4 +1,9 @@
-import { capitalize, reverseString, calculator } from './index.js';
+import {
+  capitalize,
+  reverseString,
+  calculator,
+  caesarCipher
+} from './index.js';
 
 // capitalize
 test('capitalizes first letter of lowercase string', () => {
@@ -68,4 +73,11 @@ test('checks division by zero on calculator.divide', () => {
 
 test('checks fractional quotient on calculator.divide', () => {
   expect(calculator.divide(1, 4)).toBe(1 / 4);
+});
+
+// caesarCipher
+test('tests caesar cipher with -1 offset', () => {
+  expect(caesarCipher('abcdefghijklmnopqrstuvwxyz')).toBe(
+    'bcdefghijklmnopqrstuvwxyza'
+  );
 });
