@@ -1,5 +1,5 @@
-import { sum } from './index.js';
+import { capitalize } from './index.js';
 
-test('adds 1 + 2 to equal 3', () => {
-  expect(sum(1, 2)).toBe(3);
+test('capitalizes first letter of lowercase string', () => {
+  expect(capitalize('george')).toBe('George');
 });

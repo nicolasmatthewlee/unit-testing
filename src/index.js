@@ -1,11 +1,5 @@
-let e = () => {
-  console.log('test');
-};
-e();
-e();
-
-function sum(a, b) {
-  return a + b;
+function capitalize(s) {
+  return s.slice(0, 1).toUpperCase().concat(s.slice(1));
 }
 
-export { sum };
+export { capitalize };
