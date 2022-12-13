@@ -1,4 +1,3 @@
-import test from 'node:test';
 import { capitalize, reverseString } from './index.js';
 
 test('capitalizes first letter of lowercase string', () => {
