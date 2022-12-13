@@ -10,4 +10,29 @@ function reverseString(s) {
   return reversed;
 }
 
-export { capitalize, reverseString };
+let calculatorConstructor = () => {
+  function add(a, b) {
+    return a + b;
+  }
+
+  function subtract(a, b) {
+    return a - b;
+  }
+
+  function multiply(a, b) {
+    return a * b;
+  }
+
+  function divide(a, b) {
+    if (b == 0) {
+      return undefined;
+    }
+    return a / b;
+  }
+
+  return { add, subtract, multiply, divide };
+};
+
+let calculator = calculatorConstructor();
+
+export { capitalize, reverseString, calculator };
