@@ -45,6 +45,16 @@ function caesarCipher(s) {
   return shifted;
 }
 
-caesarCipher('abcdefghijklmnopqrstuvwxyz');
+function analyzeArray(a) {
+  let average =
+    a.reduce((sum, n) => {
+      return sum + n;
+    }) / a.length;
+  let min = Math.min(...a);
+  let max = Math.max(...a);
+  let length = a.length;
 
-export { capitalize, reverseString, calculator, caesarCipher };
+  return { average, min, max, length };
+}
+
+export { capitalize, reverseString, calculator, caesarCipher, analyzeArray };

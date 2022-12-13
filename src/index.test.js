@@ -2,7 +2,8 @@ import {
   capitalize,
   reverseString,
   calculator,
-  caesarCipher
+  caesarCipher,
+  analyzeArray
 } from './index.js';
 
 // capitalize
@@ -84,7 +85,7 @@ test('tests caesar cipher with -1 offset', () => {
 
 // analyzeArray
 test('returns object containing the average, min, max, length of the array [1,8,3,4,2,6]', () => {
-  expect(analyzeArray([1, 8, 3, 4, 2, 6])).toBe({
+  expect(analyzeArray([1, 8, 3, 4, 2, 6])).toEqual({
     average: 4,
     min: 1,
     max: 8,
