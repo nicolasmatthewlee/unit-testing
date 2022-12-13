@@ -32,7 +32,19 @@ let calculatorConstructor = () => {
 
   return { add, subtract, multiply, divide };
 };
-
 let calculator = calculatorConstructor();
 
-export { capitalize, reverseString, calculator };
+function caesarCipher(s) {
+  let shifted = '';
+  const alphabet = 'abcdefghijklmnopqrstuvwxyz';
+  for (let i = 0; i < s.length; i++) {
+    let letterIndex = alphabet.indexOf(s[i].toLowerCase());
+    let newLetterIndex = (letterIndex + 27) % s.length;
+    shifted += alphabet.charAt(newLetterIndex);
+  }
+  return shifted;
+}
+
+caesarCipher('abcdefghijklmnopqrstuvwxyz');
+
+export { capitalize, reverseString, calculator, caesarCipher };
