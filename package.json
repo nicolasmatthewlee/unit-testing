@@ -1,0 +1,37 @@
+{
+  "name": "unit-testing",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch": "webpack --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nicolasmatthewlee/unit-testing.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nicolasmatthewlee/unit-testing/issues"
+  },
+  "homepage": "https://github.com/nicolasmatthewlee/unit-testing#readme",
+  "devDependencies": {
+    "@babel/core": "^7.20.5",
+    "@babel/preset-env": "^7.20.2",
+    "babel-jest": "^29.3.1",
+    "babel-loader": "^9.1.0",
+    "css-loader": "^6.7.2",
+    "eslint-config-prettier": "^8.5.0",
+    "html-webpack-plugin": "^5.5.0",
+    "jest": "^29.3.1",
+    "style-loader": "^3.3.1",
+    "webpack": "^5.75.0",
+    "webpack-cli": "^5.0.1"
+  },
+  "dependencies": {
+    "node": "^19.2.0"
+  }
+}
